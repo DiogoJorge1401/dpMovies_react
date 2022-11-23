@@ -53,7 +53,7 @@ export const Header = () => {
       >
         <div className="logo">
           <img src={logo} alt="" />
-          <Link to='/' >dMovies</Link>
+          <Link to='/' >dpMovies</Link>
         </div>
 
         <ul className="header__nav">
