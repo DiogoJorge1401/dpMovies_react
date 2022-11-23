@@ -7,8 +7,9 @@ const axiosCient = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-  paramsSerializer: (params) =>
-    queryString.stringify({ ...params, api_key: apiConfig.apiKey }),
+  paramsSerializer: {
+    serialize: (params) => queryString.stringify({ ...params, api_key: apiConfig.apiKey }),
+  }
 })
 
 axiosCient.interceptors.request.use(async (config) => config)

@@ -15,7 +15,7 @@ export const Footer = () => {
         <div className="footer__content__logo">
           <div className="logo">
             <img src={logo} alt="" />
-            <Link to={'/'}>dMovies</Link>
+            <Link to={'/'}>dpMovies</Link>
           </div>
         </div>
 
